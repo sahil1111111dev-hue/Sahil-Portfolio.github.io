@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Portfolio</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top left, #0f172a, #020617);
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+      overflow-x: hidden;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      max-width: 750px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      background: linear-gradient(to right, #00eaff, #00ffb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      margin: 2.5rem 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      padding: 0.7rem 1.3rem;
+      border-radius: 25px;
+      font-weight: 500;
+      color: #00eaff;
+      border: 1px solid rgba(0, 234, 255, 0.4);
+      background: rgba(0, 234, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .skill:hover {
+      background: #00eaff;
+      color: #0f172a;
+      transform: translateY(-3px);
+    }
+
+    .about p {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact p {
+      margin-bottom: 0.6rem;
+      color: #e2e8f0;
+      font-size: 1rem;
+    }
+
+    .contact a {
+      color: #00eaff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #00ffb3;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #64748b;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Subtle glowing background circles */
+    .glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: -1;
+    }
+
+    .glow.one {
+      width: 300px;
+      height: 300px;
+      background: #00eaff;
+      top: 10%;
+      left: 10%;
+      opacity: 0.2;
+    }
+
+    .glow.two {
+      width: 400px;
+      height: 400px;
+      background: #00ffb3;
+      bottom: 10%;
+      right: 5%;
+      opacity: 0.15;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Glow Effects -->
+  <div class="glow one"></div>
+  <div class="glow two"></div>
+
+  <!-- Main Content -->
+  <div class="glass-card">
+    <h1>Hi, I'm sahil</h1>
+    <h2>Creative Web Developer</h2>
+
+    <section class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">MongoDB</div>
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a full-stack developer with a passion for sleek, interactive, and high-performance web design.
+        I enjoy building digital experiences that are both beautiful and functional — combining creativity
+        with clean, modern code. When I’m not coding, I’m probably exploring new tech or sketching UI ideas.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sahil.1111111dev@gmail.com">sahil.1111111dev@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/sahil1111111dev-hue/" target="_blank">github.com/sahil1111111dev-hue</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-kumar-ab031a222/" target="_blank">linkedin.com/in/sahil-kumar-ab031a222</a></p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Sahil Developer — All Rights Reserved
+  </footer>
+
+</body>
+</html>
